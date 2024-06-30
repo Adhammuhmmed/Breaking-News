@@ -1,0 +1,126 @@
+/* Start Global */
+body {
+   font-family: "Montserrat", sans-serif;
+}
+/* End Global */
+
+
+
+/* Start Navbar */
+.navbar {
+   background-color: #204ECF !important;
+}
+.navbar .nav-item .navbar-brand {
+   font-size: 25px;
+}
+.navbar .nav-item .nav-link {
+   text-transform: capitalize;
+   color: #FFF;
+   font-weight: 500;
+   font-size: 16px;
+}
+
+/* End Navbar */
+
+
+/* Start Home */
+.news  {
+   box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+   height: 420px;
+}
+.news img {
+   height: 200px;
+}
+.news .content-description p {
+   color: #555;
+}
+.news a {
+   font-size: 14px;
+   font-weight: 500;
+}
+.news .description {
+   font-weight: 600;
+}
+.news .date {
+   font-size: 14px;
+   font-weight: 500;
+   color: #777;
+}
+/* Start Loading Screen */
+
+.loader-screen {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 100;
+}
+.loader {
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   display: inline-block;
+   position: relative;
+   border: 3px solid;
+   border-color: #FFF #FFF transparent transparent;
+   box-sizing: border-box;
+   animation: rotation 1s linear infinite;
+ }
+ .loader::after,
+ .loader::before {
+   content: '';  
+   box-sizing: border-box;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+   border: 3px solid;
+   border-color: transparent transparent #204ECF #204ECF;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   box-sizing: border-box;
+   animation: rotationBack 0.5s linear infinite;
+   transform-origin: center center;
+ }
+ .loader::before {
+   width: 32px;
+   height: 32px;
+   border-color: #FFF #FFF transparent transparent;
+   animation: rotation 1.5s linear infinite;
+ }
+     
+ @keyframes rotation {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ } 
+ @keyframes rotationBack {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(-360deg);
+   }
+ }
+     
+/* End Loading Screen */
+
+
+/* End Home */
+
+/* Start Footer */
+footer {
+   background-color: #204ECF !important;
+}
+/* End Footer */
